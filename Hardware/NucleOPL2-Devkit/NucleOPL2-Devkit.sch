@@ -1,0 +1,359 @@
+EESchema Schematic File Version 4
+LIBS:NucleOPL2-Devkit-cache
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L NucleOPL2:YM3014B U3
+U 1 1 5DC959A2
+P 6750 2650
+F 0 "U3" H 6725 2775 50  0000 C CNN
+F 1 "YM3014B" H 6725 2684 50  0000 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm" H 6750 2650 50  0001 C CNN
+F 3 "" H 6750 2650 50  0001 C CNN
+	1    6750 2650
+	1    0    0    -1  
+$EndComp
+Text GLabel 6250 1900 0    50   Input ~ 0
+BUFF
+Text GLabel 6400 2850 0    50   Input ~ 0
+BUFF
+$Comp
+L power:GND #PWR0101
+U 1 1 5DCC4910
+P 7600 1800
+F 0 "#PWR0101" H 7600 1550 50  0001 C CNN
+F 1 "GND" V 7605 1672 50  0001 R CNN
+F 2 "" H 7600 1800 50  0001 C CNN
+F 3 "" H 7600 1800 50  0001 C CNN
+	1    7600 1800
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:CP C1
+U 1 1 5DCCB0D1
+P 7000 2000
+F 0 "C1" V 7255 2000 50  0000 C CNN
+F 1 "1000uF" V 7164 2000 50  0000 C CNN
+F 2 "Capacitor_THT:CP_Radial_D8.0mm_P3.50mm" H 7038 1850 50  0001 C CNN
+F 3 "~" H 7000 2000 50  0001 C CNN
+	1    7000 2000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Amplifier_Operational:LM358 U4
+U 1 1 5DCD2C9C
+P 6550 2000
+F 0 "U4" H 6550 2367 50  0000 C CNN
+F 1 "LM358" H 6550 2276 50  0000 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm" H 6550 2000 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm2904-n.pdf" H 6550 2000 50  0001 C CNN
+	1    6550 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:LM358 U4
+U 2 1 5DCD49E8
+P 7950 2900
+F 0 "U4" H 7950 3267 50  0000 C CNN
+F 1 "LM358" H 7950 3176 50  0000 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm" H 7950 2900 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm2904-n.pdf" H 7950 2900 50  0001 C CNN
+	2    7950 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:LM358 U4
+U 3 1 5DCD7160
+P 6600 4000
+F 0 "U4" V 6275 4000 50  0000 C CNN
+F 1 "LM358" V 6366 4000 50  0000 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm" H 6600 4000 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm2904-n.pdf" H 6600 4000 50  0001 C CNN
+	3    6600 4000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6850 2000 6850 2300
+Wire Wire Line
+	6850 2300 6250 2300
+Wire Wire Line
+	6250 2300 6250 2100
+Connection ~ 6850 2000
+$Comp
+L power:GND #PWR0102
+U 1 1 5DCE443B
+P 6300 3900
+F 0 "#PWR0102" H 6300 3650 50  0001 C CNN
+F 1 "GND" V 6305 3772 50  0000 R CNN
+F 2 "" H 6300 3900 50  0001 C CNN
+F 3 "" H 6300 3900 50  0001 C CNN
+	1    6300 3900
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+5V #PWR0103
+U 1 1 5DCE5528
+P 6900 3900
+F 0 "#PWR0103" H 6900 3750 50  0001 C CNN
+F 1 "+5V" V 6915 4028 50  0000 L CNN
+F 2 "" H 6900 3900 50  0001 C CNN
+F 3 "" H 6900 3900 50  0001 C CNN
+	1    6900 3900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4700 3100 4600 3100
+$Comp
+L power:GND #PWR0104
+U 1 1 5DCA384E
+P 4600 3100
+F 0 "#PWR0104" H 4600 2850 50  0001 C CNN
+F 1 "GND" H 4605 2927 50  0000 C CNN
+F 2 "" H 4600 3100 50  0001 C CNN
+F 3 "" H 4600 3100 50  0001 C CNN
+	1    4600 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4700 2000 4600 2000
+$Comp
+L power:+5V #PWR0105
+U 1 1 5DCA172F
+P 4600 2000
+F 0 "#PWR0105" H 4600 1850 50  0001 C CNN
+F 1 "+5V" H 4615 2173 50  0000 C CNN
+F 2 "" H 4600 2000 50  0001 C CNN
+F 3 "" H 4600 2000 50  0001 C CNN
+	1    4600 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L NucleOPL2:YM3812 U2
+U 1 1 5DC84F89
+P 5100 1900
+F 0 "U2" H 5100 2025 50  0000 C CNN
+F 1 "YM3812" H 5100 1934 50  0000 C CNN
+F 2 "Package_DIP:DIP-24_W15.24mm" H 5000 1900 50  0001 C CNN
+F 3 "" H 5000 1900 50  0001 C CNN
+	1    5100 1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7100 2750 7400 2750
+Wire Wire Line
+	7400 2750 7400 3000
+Wire Wire Line
+	7400 3000 7550 3000
+Wire Wire Line
+	8250 2900 8250 3150
+Wire Wire Line
+	8250 3150 7550 3150
+Wire Wire Line
+	7550 3150 7550 3000
+Connection ~ 7550 3000
+Wire Wire Line
+	7550 3000 7650 3000
+Wire Wire Line
+	8350 2650 7650 2650
+Wire Wire Line
+	7650 2650 7650 2800
+Wire Wire Line
+	7850 3500 7800 3500
+Connection ~ 7850 3500
+$Comp
+L power:GND #PWR0106
+U 1 1 5DD51760
+P 7850 3500
+F 0 "#PWR0106" H 7850 3250 50  0001 C CNN
+F 1 "GND" V 7855 3372 50  0000 R CNN
+F 2 "" H 7850 3500 50  0001 C CNN
+F 3 "" H 7850 3500 50  0001 C CNN
+	1    7850 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7900 3500 7850 3500
+$Comp
+L Device:CP C3
+U 1 1 5DD4D37C
+P 7650 3500
+F 0 "C3" H 7768 3546 50  0000 L CNN
+F 1 "10uF" H 7768 3455 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D8.0mm_P3.50mm" H 7688 3350 50  0001 C CNN
+F 3 "~" H 7650 3500 50  0001 C CNN
+	1    7650 3500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:CP C2
+U 1 1 5DD48704
+P 8050 3500
+F 0 "C2" H 8168 3546 50  0000 L CNN
+F 1 "10uF" H 8168 3455 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D8.0mm_P3.50mm" H 8088 3350 50  0001 C CNN
+F 3 "~" H 8050 3500 50  0001 C CNN
+	1    8050 3500
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7300 3500 7500 3500
+Wire Wire Line
+	7300 2850 7300 3500
+Wire Wire Line
+	7300 3500 7300 3800
+Wire Wire Line
+	7300 3800 8350 3800
+Wire Wire Line
+	8350 2650 8350 3800
+Connection ~ 7300 3500
+Wire Wire Line
+	8200 3500 8250 3500
+Wire Wire Line
+	8250 3500 8250 3150
+Connection ~ 8250 3150
+$Comp
+L power:GND #PWR0107
+U 1 1 5DD63CFD
+P 7200 2950
+F 0 "#PWR0107" H 7200 2700 50  0001 C CNN
+F 1 "GND" H 7205 2777 50  0000 C CNN
+F 2 "" H 7200 2950 50  0001 C CNN
+F 3 "" H 7200 2950 50  0001 C CNN
+	1    7200 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7100 2950 7200 2950
+Wire Wire Line
+	7100 2850 7300 2850
+Wire Wire Line
+	6400 2750 6350 2750
+Wire Wire Line
+	7100 3050 7100 3150
+Text GLabel 6400 3150 0    50   Input ~ 0
+ΦSY
+Text GLabel 6400 3050 0    50   Input ~ 0
+MO
+Text GLabel 6400 2950 0    50   Input ~ 0
+SH
+Wire Wire Line
+	7100 3150 6400 3150
+Text GLabel 5500 2100 2    50   Input ~ 0
+ΦSY
+Text GLabel 5500 2300 2    50   Input ~ 0
+MO
+Text GLabel 5500 2400 2    50   Input ~ 0
+SH
+$Comp
+L power:+5V #PWR0108
+U 1 1 5DD7C0C2
+P 6350 2750
+F 0 "#PWR0108" H 6350 2600 50  0001 C CNN
+F 1 "+5V" H 6365 2923 50  0000 C CNN
+F 2 "" H 6350 2750 50  0001 C CNN
+F 3 "" H 6350 2750 50  0001 C CNN
+	1    6350 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L NucleOPL2:3.579545MHz X1
+U 1 1 5DD96FAD
+P 4900 3550
+F 0 "X1" H 5444 3296 50  0000 L CNN
+F 1 "3.579545MHz" H 5444 3205 50  0000 L CNN
+F 2 "Oscillator:Oscillator_DIP-14" H 4900 3550 50  0001 C CNN
+F 3 "" H 4900 3550 50  0001 C CNN
+	1    4900 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0109
+U 1 1 5DD9B7E6
+P 4900 3500
+F 0 "#PWR0109" H 4900 3350 50  0001 C CNN
+F 1 "+5V" H 4915 3673 50  0000 C CNN
+F 2 "" H 4900 3500 50  0001 C CNN
+F 3 "" H 4900 3500 50  0001 C CNN
+	1    4900 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0110
+U 1 1 5DD9BC83
+P 4900 4200
+F 0 "#PWR0110" H 4900 3950 50  0001 C CNN
+F 1 "GND" H 4905 4027 50  0000 C CNN
+F 2 "" H 4900 4200 50  0001 C CNN
+F 3 "" H 4900 4200 50  0001 C CNN
+	1    4900 4200
+	1    0    0    -1  
+$EndComp
+Text GLabel 5350 3950 3    50   Input ~ 0
+CLOCK
+Text GLabel 5500 2000 2    50   Input ~ 0
+CLOCK
+Text GLabel 4700 2900 0    50   Input ~ 0
+D0
+Text GLabel 4700 3000 0    50   Input ~ 0
+D1
+Text GLabel 5500 2600 2    50   Input ~ 0
+D7
+Text GLabel 5500 3100 2    50   Input ~ 0
+D2
+Text GLabel 5500 3000 2    50   Input ~ 0
+D3
+Text GLabel 5500 2900 2    50   Input ~ 0
+D4
+Text GLabel 5500 2800 2    50   Input ~ 0
+D5
+Text GLabel 5500 2700 2    50   Input ~ 0
+D6
+Text GLabel 4700 2100 0    50   Input ~ 0
+IRQ
+Text GLabel 4700 2200 0    50   Input ~ 0
+IC
+Text GLabel 4700 2300 0    50   Input ~ 0
+A0
+Text GLabel 4700 2400 0    50   Input ~ 0
+WR
+Text GLabel 4700 2500 0    50   Input ~ 0
+RD
+Text GLabel 4700 2600 0    50   Input ~ 0
+CS
+Wire Wire Line
+	5250 3850 5350 3850
+Wire Wire Line
+	5350 3850 5350 3950
+$Comp
+L Connector:AudioJack2_Ground J1
+U 1 1 5DCA41E9
+P 7600 2000
+F 0 "J1" H 7420 1926 50  0000 R CNN
+F 1 "AudioJack2_Ground" H 7420 2017 50  0000 R CNN
+F 2 "Connector_Audio:Jack_3.5mm_CUI_SJ1-3533NG_Horizontal" H 7600 2000 50  0001 C CNN
+F 3 "~" H 7600 2000 50  0001 C CNN
+	1    7600 2000
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7150 2000 7350 2000
+Wire Wire Line
+	7350 2000 7350 2100
+Wire Wire Line
+	7350 2100 7400 2100
+Connection ~ 7350 2000
+Wire Wire Line
+	7350 2000 7400 2000
+$EndSCHEMATC
