@@ -1,0 +1,4 @@
+*.bck
+*.*bak
+*fp-info-cache
+Hardware/NucleOPL2-Devkit/rescue-backup/
